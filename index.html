@@ -3,29 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple search app using Serper search results.">
     <title>Search App</title>
     <link rel="shortcut icon" href="icon/18d8faaa-b24f-4f77-9e5c-29e3fa1af7b5.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/syile.css">
     <script type="module" src="JS/main.js"></script>
 </head>
 <body>
-    <main>
-        <h1>Search App</h1>
+    <main class="app">
+        <header class="app-header">
+            <h1>Search App</h1>
+            <p>Search the web and view results below.</p>
+        </header>
 
-        <form id="searchForm">
-            <label for="Search">Search</label>
-            <input
-                type="search"
-                name="Search"
-                id="Search"
-                placeholder="Type your search"
-                autocomplete="off"
-                required
-            >
-            <button type="submit">Search</button>
+        <form id="searchForm" class="search-form">
+            <label for="Search">Search text</label>
+            <div class="search-row">
+                <input
+                    type="search"
+                    name="Search"
+                    id="Search"
+                    placeholder="Enter search words"
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit">Search</button>
+            </div>
         </form>
 
-        <div id="result" aria-live="polite"></div>
+        <section class="results-panel" aria-label="Search results">
+            <div id="result" aria-live="polite">Results will appear here.</div>
+        </section>
     </main>
 </body>
 </html>
