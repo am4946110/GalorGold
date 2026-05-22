@@ -62,7 +62,7 @@ form.addEventListener("submit", async (event) => {
     };
 
     try {
-        const response = await fetch("https://google.serper.dev/news", requestOptions);
+        const response = await fetch("https://google.serper.dev/search", requestOptions);
 
         if (!response.ok) {
             throw new Error(`Request failed: ${response.status}`);
