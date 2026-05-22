@@ -45,7 +45,8 @@ h1 {
     box-shadow: 0 8px 24px rgba(20, 35, 50, 0.08);
 }
 
-.search-row {
+.search-row 
+{
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 10px;
