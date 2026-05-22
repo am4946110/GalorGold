@@ -205,7 +205,8 @@ function renderRelatedSearches(searches) {
     resultBox.appendChild(group);
 }
 
-function renderSearchResults(data) {
+function renderSearchResults(data)
+{
     clearResults();
 
     if (!data || (!data.knowledgeGraph && (!data.organic || data.organic.length === 0))) {
